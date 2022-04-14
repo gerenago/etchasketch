@@ -13,4 +13,9 @@ for (i=0; i<numOfSquares; i++) {
 const container = document.querySelector('#container');
 container.style.gridTemplateColumns = `repeat(${gridNumber}, 1fr)`;
 
+//when mouse hovers over square, change color permanently to black
+const square = document.querySelectorAll('.square');
+square.forEach(square => square.addEventListener("mouseover", function (e) {
+    square.style.backgroundColor = "black";
+}))
 //if reset button is pressed, prompt for # of squares and return as gridNumber
