@@ -10,4 +10,7 @@ for (i=0; i<numOfSquares; i++) {
     container.appendChild(div);
 }
 //and then style the container as a grid with gridNumber rows and gridNumber columns
+const container = document.querySelector('#container');
+container.style.gridTemplateColumns = `repeat(${gridNumber}, 1fr)`;
+
 //if reset button is pressed, prompt for # of squares and return as gridNumber

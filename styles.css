@@ -1,10 +1,11 @@
 #container {
     display:grid;
     width:960px;
+    height:960px;
 }
+
 .square {
-    background-color: white;
     border-color: black;
-    width: auto;
-    height: auto;
+    border: solid;
+    border-width: 1px;
 }
