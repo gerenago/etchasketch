@@ -30,8 +30,8 @@ const btn = document.querySelector('.reset');
 btn.addEventListener("click", function (e) {
     const square = document.querySelectorAll('.square');
     square.forEach(e => e.remove());
-    let input = window.prompt("Number of squares per side for new grid");
-    gridNumber = parseInt(input)
+    let input = window.prompt("Number of squares per side for new grid (Less than 100)");
+    gridNumber = Math.min(100, parseInt(input))
     numOfSquares = gridNumber * gridNumber;
     addClass(numOfSquares)
     createGrid(gridNumber)
